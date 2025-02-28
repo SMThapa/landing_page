@@ -28,7 +28,8 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: var(--primary-font);        
+    font-family: var(--primary-font);       
+    scroll-behavior: smooth; 
 }
 body{
     background: var(--light-bg);
@@ -298,7 +299,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     column-gap: 20px;    
 }
 .hero-banner .mockup{
-    max-width: 1100px;
+    max-width: clamp(900px, 95%, 1200px);
     margin: 90px auto 0;
     width: 100%;
     height: clamp(55vh, 75vh, 580px);    
@@ -490,13 +491,13 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     grid-row:1/2 ;
 }
 .what-we-offer .card-contents .card.c3{
-    grid-column:  1/9;
+    grid-column:  1/10;
     grid-row: 2/3;
 }
 .what-we-offer .card-contents .btn-secondary{
     grid-column: 10/13;
     grid-row: 2/3;
-    height: calc(80% - 10px);
+    height: clamp(100px, 200px, 900px);
     aspect-ratio: 1/1;
 }
 .what-we-offer .card-contents .btn-secondary img{
@@ -571,7 +572,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     border-radius: 12px;
     padding: 40px;
     /* box-shadow: 0 0 1.5px var(--primary-color);     */
-    transition: var(--transition);    
+    transition: var(--transition) !important;    
     background:  #F5F3FF;
     height: fit-content;
 }
