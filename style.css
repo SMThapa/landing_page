@@ -140,7 +140,7 @@ nav{
     width: 100%;
     height: 110px;
     z-index: 1000;
-    transition: var(--fast-transition);
+    transition: var(--fast-transition) !important;
     color: white;
     padding: 0 20px;
 }
@@ -222,7 +222,18 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     left: 50%;    
     opacity: 1;
 }
-
+.hamburger-menu{    
+    justify-self: flex-end;
+    align-self: center;
+    display: none;    
+    height: 40px; 
+}
+.hamburger-menu svg{
+    fill: var(--light-bg);
+}
+.scrolled .hamburger-menu svg{
+    fill: var(--dark-bg);
+}
 @media (max-width: 1024px){
     nav{
         height: 70px;
@@ -232,6 +243,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     }
     .navigation .menu, .navigation .btn-get-in-touch{
         display: none;
+    }
+    .hamburger-menu{
+        display: block;
     }
 }
 /* navigation ends*/
@@ -275,7 +289,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     max-width: 60%;
     width: 100%;
     margin: 0 auto;
-    font-size: 3.2rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -302,7 +316,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     max-width: clamp(900px, 95%, 1200px);
     margin: 90px auto 0;
     width: 100%;
-    height: clamp(55vh, 75vh, 580px);    
+    height: clamp(400px, 600px, 700px);    
     position: relative;
 }
 .hero-banner .mockup [data-id]{
@@ -387,6 +401,22 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     background-image: url(./assets/icons/curved-arrow-2.png);
     transform: rotate(45deg);
 }
+
+@media (max-width: 1024px) {
+    section.hero-banner{
+        margin-top: 80px;
+    }
+    .hero-banner h1{
+        max-width: 70%;
+    }
+    .hero-banner .mockup{
+        margin-top: 50px;
+    }
+    .hero-banner .mockup{
+        max-width: clamp(600px, 85%, 1200px);
+        height: clamp(400px, 450px, 550px);          
+    }
+}
 /* hero section end */
 
 
@@ -398,7 +428,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     padding: 0 20px;
 }
 .main-section-contents .heading{ 
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 4vw, 1.3rem);
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 20px;    
@@ -408,7 +438,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 .main-section-contents .title{
     max-width: 70%;
     width: 100%;    
-    font-size: 3.2rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 60px;    
@@ -455,7 +485,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     background: var(--light-bg);
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 0 1px var(--primary-color);    
+    border: .2px solid #E0DBFD;    
     /* transition: var(--transition);     */
     display: flex;
     align-items: center;
@@ -504,6 +534,28 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     height: 25px;
     width: 25px;
     padding-right: 12px;    
+}
+
+@media (max-width: 1024px){
+    .what-we-offer .card-contents{
+        gap: 1.5rem;
+    }
+    .what-we-offer .card-contents .card.c1{
+        grid-column:  1/12;
+    }
+    .what-we-offer .card-contents .card.c2{
+        grid-column: 1/12;
+        grid-row: 2/3;
+    }
+    .what-we-offer .card-contents .card.c3{
+        grid-column:  1/12;
+        grid-row: 3/3;
+    }
+    .what-we-offer .card-contents .btn-secondary{
+        grid-column: 1/12;
+        grid-row: 4/4;
+        margin: 0 auto;
+    }
 }
 /* what-we-offer section ends*/
 
