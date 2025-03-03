@@ -140,7 +140,7 @@ nav{
     width: 100%;
     height: 110px;
     z-index: 1000;
-    transition: var(--fast-transition) !important;
+    transition: var(--fast-transition);
     color: white;
     padding: 0 20px;
 }
@@ -174,6 +174,10 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 .navigation .menu a{
     text-transform: capitalize;
+}
+.navigation .logo{
+    height: 30px;
+    width: fit-content;
 }
 .navigation .btn-get-in-touch{        
     width: fit-content;
@@ -226,7 +230,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     justify-self: flex-end;
     align-self: center;
     display: none;    
-    height: 40px; 
+    height: 30px; 
 }
 .hamburger-menu svg{
     fill: var(--light-bg);
@@ -237,6 +241,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 @media (max-width: 1024px){
     nav{
         height: 70px;
+    }
+    nav.scrolled{
+        height: 60px;
     }
     .navigation{
         grid-template-columns: 1fr 1fr;
@@ -465,6 +472,15 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     text-transform: capitalize;
     color: var(--primary-color);
 }
+@media (max-width: 768px){
+    .main-section-contents .heading{
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+    .main-section-contents .title{
+        max-width: 90%;
+        margin-bottom: 35px;
+    }
+}
 
 /* what-we-offer section */
 .what-we-offer{
@@ -537,22 +553,25 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 
 @media (max-width: 1024px){
+    .what-we-offer{
+        margin-top: 80px;
+    }
     .what-we-offer .card-contents{
         gap: 1.5rem;
     }
     .what-we-offer .card-contents .card.c1{
-        grid-column:  1/12;
+        grid-column:  1/13;
     }
     .what-we-offer .card-contents .card.c2{
-        grid-column: 1/12;
+        grid-column: 1/13;
         grid-row: 2/3;
     }
     .what-we-offer .card-contents .card.c3{
-        grid-column:  1/12;
+        grid-column:  1/13;
         grid-row: 3/3;
     }
     .what-we-offer .card-contents .btn-secondary{
-        grid-column: 1/12;
+        grid-column: 1/13;
         grid-row: 4/4;
         margin: 0 auto;
     }
@@ -605,6 +624,18 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 .software-in-action .btn-secondary img{
     height: 30px;    
     padding-right: 12px;
+}
+@media (max-width: 768px){
+    .software-in-action{
+        margin-top: 80px;
+    }
+    .in-action-contents{
+        grid-template-columns: repeat(1, 1fr);      
+        row-gap: 30px;          
+    }
+    .in-action-contents .in-action-card:nth-child(odd) {
+        margin-top: 0;
+    }
 }
 /* software in action end*/
 
@@ -677,6 +708,17 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     height: 30px;    
     padding-right: 12px;
 }
+@media (max-width: 768px){
+    .quick-start{
+        margin-top: 80px;
+    }
+    .quick-start .quick-start-contents{
+        grid-template-columns: repeat(1, 1fr);                
+    }
+    .quick-start-contents .quick-start-card:nth-child(even) {
+        margin-top: 0px;
+    }
+}
 /* quick-start  end*/
 
 /* pricing */
@@ -716,11 +758,27 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 .pricing .pricing-contents .pricing-card .btn-primary{
     height: 40px;
 }
+@media (max-width: 1024px){
+    .pricing .pricing-contents{
+        column-gap: 20px;
+    }
+}
+@media (max-width: 768px){
+    .pricing{
+        margin-top: 80px;
+    }
+    .pricing .pricing-contents{
+        grid-template-columns: repeat(1, 1fr);                
+    }
+}
 /* pricing ends*/   
 
 /* faq */
 .faq{
     margin-top: 120px;
+}
+.faq .title{
+    margin-bottom: calc(60px - .5em);
 }
 /* .accordion{
     max-width: 1000px;
@@ -740,7 +798,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     width: 100%;
     padding: 1em 0;
     color: var(--dark-color);
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 400;
     border: none;
     background: none;
@@ -797,6 +855,29 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     margin: 2em 0;
     opacity: .8;
 }
+@media (max-width: 768px){
+    .faq{
+        margin-top: 80px;
+    }
+    .faq .title{
+        margin-bottom: calc(30px - .5em);
+    }
+    .accordion button{
+        padding: .5em 0;
+    }
+    .accordion button .accordion-title {
+        padding: .5em 1.5em .5em 0;
+        display: block;
+        width: 95%;
+    }
+    .accordion img{
+        height: 15px;
+        width: 15px;
+    }
+    .accordion button[aria-expanded='true'] + .accordion-content {
+        max-height: 20em;
+    }
+}
 /* faq ends*/
 
 /* cto */
@@ -808,7 +889,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     width: 100%;
     margin: 90px auto 0; 
     height: 250px;
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
     border: 5px solid var(--primary-color);
     border-radius: 130px;
     background: var(--primary-color);    
@@ -851,6 +932,29 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 .cto .cto-button:hover .text2 img{
     filter: var(--img-primary);
 }
+@media (max-width: 768px){
+    .cto{
+        margin-top: 80px;
+    }
+    .cto .cto-button{
+        max-width: 90%;
+        width: 100%;
+        margin: 60px auto 0;
+        height: 150px;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        border: 5px solid var(--primary-color);
+        border-radius: 130px;
+        background: var(--primary-color);
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        transition: var(--transition) !important;
+    }
+    .cto .cto-button img{
+        height: 80px;
+        width: 80px;
+    }
+}
 /* cto ends*/
 
 /* footer */
@@ -866,6 +970,11 @@ footer .footer-container{
     margin: 0 auto;
     padding: 50px 20px;
     position: relative;
+}
+footer .logo{
+    height: 35px;
+    width: fit-content;
+    margin-bottom: 10px;
 }
 .footer-container .footer-bg{
     position: absolute;
@@ -930,5 +1039,22 @@ footer .address a img{
     width: 20px;
     filter: var(--img-primary);
     
+}
+@media (max-width: 768px){
+    footer{
+        margin-top: 80px;
+    }
+    footer .short-cut-menu{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    footer .short-cut-menu .menu .menu-title {
+        margin-bottom: .5rem;
+    }
+    footer .address {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
 }
 /* footer ends*/
