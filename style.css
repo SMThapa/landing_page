@@ -185,6 +185,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     padding: 8px 18px;
     border-radius: 12px;
 }
+.scrolled .navigation .btn-get-in-touch{
+    color: var(--dark-bg);
+}
 .navigation .btn-get-in-touch .image-wraper{    
     height: 35px;
     width: 35px;
