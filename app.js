@@ -23,3 +23,12 @@ function toggleAccordion() {
   }
 }
 items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+//hamburger-menu
+const hamburger_button = document.querySelector('.hamburger-icon')
+const hamburger_menu = document.querySelector('.hamburger-menu')
+hamburger_button.addEventListener('click', () =>{
+  hamburger_menu.classList.toggle('open')
+  hamburger_button.classList.toggle('open')
+})
