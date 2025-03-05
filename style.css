@@ -255,6 +255,14 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
         display: block;
     }
 }
+@media (max-width: 768px){
+    .navigation .logo{
+        height: 25px;
+    }
+    .underline {
+        margin: 15px 0 20px;
+    }
+}
 /* navigation ends*/
 
 /* hero section */
@@ -264,7 +272,6 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     right: 50%;
     transform: translate(50%, 0%);
     z-index: 1;
-
     height: 200%;
     width: 120%;
     background-color: transparent;
@@ -296,7 +303,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     max-width: 60%;
     width: 100%;
     margin: 0 auto;
-    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -414,7 +421,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
         margin-top: 80px;
     }
     .hero-banner h1{
-        max-width: 70%;
+        max-width: 85%;
     }
     .hero-banner .mockup{
         margin-top: 50px;
@@ -422,6 +429,24 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     .hero-banner .mockup{
         max-width: clamp(600px, 85%, 1200px);
         height: clamp(400px, 450px, 550px);          
+    }
+}
+@media (max-width:700px){
+    .mockup{
+        display: none;
+    }
+    .hero-section{
+        padding-bottom: 40px;
+    }
+    .hero-banner h3{
+        max-width: 75%;
+        font-size: 1rem;
+    }
+    .btn-secondary, .btn-primary {
+        height: 40px;
+        margin-top: 18px;
+        padding: 0 15px;
+        font-size: .8rem;
     }
 }
 /* hero section end */
@@ -445,7 +470,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 .main-section-contents .title{
     max-width: 70%;
     width: 100%;    
-    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-size: clamp(1.6rem, 4vw, 3.2rem);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 60px;    
@@ -473,12 +498,16 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     color: var(--primary-color);
 }
 @media (max-width: 768px){
+    .main-section-contents {
+        margin-top: 2rem;
+    }
     .main-section-contents .heading{
         font-size: clamp(1rem, 4vw, 1.2rem);
+        margin-bottom: 10px;
     }
     .main-section-contents .title{
         max-width: 90%;
-        margin-bottom: 35px;
+        margin-bottom: 22px;        
     }
 }
 
@@ -554,7 +583,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 
 @media (max-width: 1024px){
     .what-we-offer{
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .what-we-offer .card-contents{
         gap: 1.5rem;
@@ -576,6 +605,27 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
         margin: 0 auto;
     }
 }
+@media (max-width: 768px){
+    .what-we-offer .card-contents .card p {
+        font-size: .9rem;
+    }
+    .what-we-offer .card-contents .card {
+        padding: 20px;        
+        flex-direction: column-reverse;
+        justify-content: center;
+    }    
+    .what-we-offer .card-contents .card h4{
+        font-size: 1.3rem;
+    }
+    .what-we-offer .card-contents .card img {
+        height: 100px;
+        width: 100px;
+    }
+    .what-we-offer .card-contents .btn-secondary {
+        height: clamp(100px, 150px, 900px);        
+    }
+}
+
 /* what-we-offer section ends*/
 
 /* software in action */
@@ -618,16 +668,16 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 .software-in-action .btn-secondary{
     height: 200px;
-    font-size: .9rem;
+    font-size: .8rem;
     margin: 20px auto 0;
 }
 .software-in-action .btn-secondary img{
-    height: 30px;    
+    height: 20px;    
     padding-right: 12px;
 }
 @media (max-width: 768px){
     .software-in-action{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     .in-action-contents{
         grid-template-columns: repeat(1, 1fr);      
@@ -635,6 +685,13 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     }
     .in-action-contents .in-action-card:nth-child(odd) {
         margin-top: 0;
+    }
+    .in-action-contents .btn-primary {
+        height: 35px;
+    }
+    .software-in-action .btn-secondary {
+        height: 180px;        
+        margin: 30px auto 0;
     }
 }
 /* software in action end*/
@@ -710,13 +767,23 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 @media (max-width: 768px){
     .quick-start{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     .quick-start .quick-start-contents{
         grid-template-columns: repeat(1, 1fr);                
     }
     .quick-start-contents .quick-start-card:nth-child(even) {
         margin-top: 0px;
+    }
+    .quick-start-contents .quick-start-card{
+        padding: 20px;
+    }
+    .quick-start-contents .quick-start-card h3 {
+        font-size: 1.6rem;
+        margin: 0 0 1.2rem;
+    }
+    .quick-start-contents .quick-start-card p {
+        font-size: 1rem;
     }
 }
 /* quick-start  end*/
@@ -765,10 +832,19 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 @media (max-width: 768px){
     .pricing{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     .pricing .pricing-contents{
-        grid-template-columns: repeat(1, 1fr);                
+        grid-template-columns: repeat(1, 1fr);          
+        gap: 14px;      
+    }
+    .pricing .pricing-contents .pricing-card {
+        background: #F5F3FF;
+        padding: 18px 24px;
+        border-radius: 25px;
+    }
+    .pricing .pricing-contents .pricing-card .btn-primary {
+        height: 30px;
     }
 }
 /* pricing ends*/   
@@ -857,18 +933,20 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 @media (max-width: 768px){
     .faq{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     .faq .title{
         margin-bottom: calc(30px - .5em);
     }
     .accordion button{
-        padding: .5em 0;
+        padding: .5rem 0;
+        font-size: 1.1rem;
     }
     .accordion button .accordion-title {
         padding: .5em 1.5em .5em 0;
         display: block;
         width: 95%;
+        /* font-size: clamp(1rem, 1.1vw, 1.4rem); */
     }
     .accordion img{
         height: 15px;
@@ -876,6 +954,10 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     }
     .accordion button[aria-expanded='true'] + .accordion-content {
         max-height: 20em;
+    }
+    .accordion .accordion-content p {
+        font-size: .9rem;
+        margin: 1rem 0;
     }
 }
 /* faq ends*/
@@ -934,15 +1016,15 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 }
 @media (max-width: 768px){
     .cto{
-        margin-top: 80px;
+        margin-top: 60px;
     }
     .cto .cto-button{
         max-width: 90%;
         width: 100%;
-        margin: 60px auto 0;
-        height: 150px;
-        font-size: clamp(2.5rem, 6vw, 4.5rem);
-        border: 5px solid var(--primary-color);
+        margin: 40px auto 0;
+        height: 90px;
+        font-size: 1.2rem;
+        border: 3px solid var(--primary-color);
         border-radius: 130px;
         background: var(--primary-color);
         position: relative;
@@ -951,8 +1033,8 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
         transition: var(--transition) !important;
     }
     .cto .cto-button img{
-        height: 80px;
-        width: 80px;
+        height: 40px;
+        width: 40px;
     }
 }
 /* cto ends*/
