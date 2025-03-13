@@ -267,6 +267,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     width: 100px;
 }
 .hamburger-menu{
+    display: none;
     position: absolute;
     top: 0;
     left: 100%;
@@ -285,7 +286,7 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
 .hamburger-menu .all-menu{
     display: flex;
     flex-direction: column;
-    margin-top: 8vh;
+    margin-top: 14vh;
     padding: 0 8vw;
 }
 .hamburger-menu .all-menu a{
@@ -311,6 +312,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     .hamburger-icon{
         display: block;
     }
+    .hamburger-menu{
+        display: block;
+    }
 }
 @media (max-width: 768px){
     .navigation .logo{
@@ -318,6 +322,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     }
     .underline {
         margin: 15px 0 20px;
+    }
+    .hamburger-menu .all-menu{        
+        margin-top: 8vh;
     }
 }
 /* navigation ends*/
@@ -515,6 +522,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
     margin: 0 auto;
     margin-top: 5rem;
     padding: 0 20px;
+}
+.main-section-contents > div{
+    scroll-margin-top: 120px;
 }
 .main-section-contents .heading{ 
     font-size: clamp(1rem, 4vw, 1.3rem);
@@ -899,6 +909,9 @@ nav.scrolled .btn-get-in-touch .image-wraper img{
         background: #F5F3FF;
         padding: 18px 24px;
         border-radius: 25px;
+    }
+    .pricing .pricing-contents .pricing-card p{
+        margin-bottom: 12px;
     }
     .pricing .pricing-contents .pricing-card .btn-primary {
         height: 30px;
