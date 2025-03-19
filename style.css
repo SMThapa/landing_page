@@ -1287,3 +1287,31 @@ footer .address a img{
     }
 }
 /* footer ends*/
+
+
+/* what-we-offer-page */
+.what-we-offer{
+    margin-top: 150px;
+}
+.what-we-offer h2{    
+    font-size:  3rem;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    margin-bottom: 4rem;    
+}
+.what-we-offer .card{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.what-we-offer .card h4{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+.what-we-offer .card img{
+    width: 40%;
+}
+/* what-we-offer-page ends*/
+
