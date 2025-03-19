@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheltrX</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/sheltrX_favicon.webp">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <nav class="text-dark">
+        <div class="navigation">
+            <a href="/" class="logo" >
+                <img src="./assets/icons/shelterxfull.png" alt="logo" />
+            </a>
+            <div class="menu">
+                <a href="/">home</a>
+                <a href="/#about">about</a>
+                <a href="/#services">services</a>
+                <a href="/#pricing">pricing</a>
+                <a href="/#faq">FAQ</a>
+            </div>
+            <a href="#" class="btn-get-in-touch">
+                <div class="image-wraper">
+                    <img src="./assets/icons/next.png" alt="icon-next">
+                    <img src="./assets/icons/next.png" alt="icon-next">
+                </div>
+                Get in touch
+            </a>  
+            <div class="hamburger-icon">
+                <svg viewBox="0 0 100 80" width="30" height="30">
+                    <rect width="80" height="10" rx="10"></rect>
+                    <rect y="30" width="60" height="10" rx="10"></rect>
+                    <rect y="60" width="100" height="10" rx="10"></rect>
+                </svg>
+            </div>
+        </div>        
+        <div class="hamburger-menu">
+            <div class="all-menu">
+                <a href="#">home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#pricing">pricing</a>
+                <a href="#faq">FAQ</a>
+            </div>
+        </div>
+    </nav>
+    <section class="benefits-section ">
+        <div class="container">
+            <h2>Benefits You Will Get</h2>
+            
+            <div class="card c1" data-aos="fade-up">                    
+                <div class="card-text-contents">
+                    <h4>Seamless Tenant & Lease Management</h4>
+                    <p>Easily handle tenant records, lease agreements, and payments in one place. Get real-time updates on lease renewals and expirations to ensure smooth operations.</p>
+                </div>
+                <img src="./assets/images/1.webp" alt="Tenant & Lease Management">
+            </div>
+            
+            <div class="card c2" data-aos="fade-up" data-aos-delay="200">                    
+                <div class="card-text-contents">
+                    <h4>Automated Payments & Maintenance Tracking</h4>
+                    <p>Set up rent reminders, payment tracking, and digital maintenance request handling to streamline property management. Assign vendors efficiently and track job progress.</p>
+                </div>
+                <img src="./assets/images/2.webp" alt="Automated Payments & Maintenance">
+            </div>
+            
+            <div class="card c3" data-aos="fade-up" data-aos-delay="400">                    
+                <div class="card-text-contents">
+                    <h4>Smart Insights & Multi-Property Management</h4>
+                    <p>Access analytics and reports to monitor rental income, occupancy trends, and expenses. Manage multiple properties under one dashboard for a hassle-free experience.</p>
+                </div>
+                <img src="./assets/images/3.webp" alt="Smart Insights & Multi-Property Management">
+            </div>
+    
+            <div class="card c4" data-aos="fade-up" data-aos-delay="600">                    
+                <div class="card-text-contents">
+                    <h4>Custom Website & Campus Management</h4>
+                    <p>Create a fully customizable website to list your properties with detailed descriptions and images. Manage all pages from a single campus dashboard for easy control.</p>
+                </div>
+                <img src="./assets/images/4.webp" alt="Custom Website & Campus Management">
+            </div>
+            
+            <div class="card c5" data-aos="fade-up" data-aos-delay="800">                    
+                <div class="card-text-contents">
+                    <h4>Automatic Rent Collection</h4>
+                    <p>Automate rent payments with reminders and online transactions. Reduce delays and ensure timely collections without manual follow-ups.</p>
+                </div>
+                <img src="./assets/images/5.webp" alt="Automatic Rent Collection">
+            </div>
+            
+            <div class="card c6" data-aos="fade-up" data-aos-delay="1000">                    
+                <div class="card-text-contents">
+                    <h4>Security & Zero Deposit Option</h4>
+                    <p>Provide secure housing options with zero deposit schemes and enhanced safety features for female tenants, ensuring a worry-free stay.</p>
+                </div>
+                <img src="./assets/images/6.webp" alt="Security & Zero Deposit Option">
+            </div>
+            
+            <div class="card c7" data-aos="fade-up" data-aos-delay="1200">                    
+                <div class="card-text-contents">
+                    <h4>Guest Entry & Digital Accounts</h4>
+                    <p>Manage guest entries efficiently with a digital log. Track expenses, maintain tenant details, and organize all financial records under one account.</p>
+                </div>
+                <img src="./assets/images/7.webp" alt="Guest Entry & Digital Accounts">
+            </div>
+            
+            <div class="card c8" data-aos="fade-up" data-aos-delay="1400">                    
+                <div class="card-text-contents">
+                    <h4>Real-time Notifications & Updates</h4>
+                    <p>Stay informed with instant push notifications for rent payments, maintenance requests, lease renewals, and other important updates.</p>
+                </div>
+                <img src="./assets/images/8.webp" alt="Real-time Notifications">
+            </div>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.21/dist/lenis.min.js"></script> 
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            offset: 120, // Distance to trigger animation
+            easing: "ease-in-out", // Animation easing
+            once: true, // Animate only once
+        });
+
+        // Initialize Lenis
+        const lenis = new Lenis({
+            autoRaf: true,
+        });
+    </script>
+</body>
+</html>
