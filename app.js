@@ -28,6 +28,13 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
 //hamburger-menu
 const hamburger_button = document.querySelector('.hamburger-icon')
 const hamburger_menu = document.querySelector('.hamburger-menu')
+const all_menu = document.querySelectorAll('.hamburger-menu a')
+all_menu.forEach((menu) => {
+  menu.addEventListener('click', () => {
+    hamburger_menu.classList.remove('open')
+    hamburger_button.classList.remove('open')
+  })
+})
 hamburger_button.addEventListener('click', () =>{
   hamburger_menu.classList.toggle('open')
   hamburger_button.classList.toggle('open')

@@ -250,6 +250,9 @@ nav.text-dark .menu a{
 .hamburger-icon svg{
     fill: var(--light-bg);
 }
+.text-dark .hamburger-icon svg{
+    fill: var(--dark-bg);
+}
 .scrolled .hamburger-icon svg{
     fill: var(--dark-bg);
 }
@@ -1186,6 +1189,38 @@ form button{
     text-decoration: underline;
     transition: var(--fast-transition);
 }
+@media (width < 850px){
+    .contact-page .contact-contents{
+        grid-template-columns: 1fr;
+    }
+    .contact-page .other-details{
+        margin-top: 60px;                
+        justify-content: center;
+        border: none;
+        padding: 0;        
+    }
+    .contact-page .contact-info{
+        display: flex;
+        column-gap: 40px;
+    }
+}
+@media (width < 450px){
+    .contact-page .contact-contents{
+        grid-template-columns: 1fr;
+    }
+    .contact-page .other-details{
+        margin-top: 60px;                
+        justify-content: center;
+        border: none;
+        padding: 0;        
+    }
+    .contact-page .contact-info{
+        display: flex;
+        flex-direction: column;
+        column-gap: 40px;
+    }
+}
+/* contact page ends */
 /* footer */
 footer{
     background: var(--dark-color);
@@ -1290,28 +1325,42 @@ footer .address a img{
 
 
 /* what-we-offer-page */
-.what-we-offer{
+.what-we-offer-page{
     margin-top: 150px;
 }
-.what-we-offer h2{    
+.what-we-offer-page h2{    
     font-size:  3rem;
     font-family: var(--secondary-font);
     color: var(--primary-color);
     margin-bottom: 4rem;    
 }
-.what-we-offer .card{
+.what-we-offer-page .card{
     display: flex;
     align-items: center;
     gap: 40px;
+    margin-bottom: 20px;
 }
-.what-we-offer .card h4{
-    font-size: 3rem;
+.what-we-offer-page .card h4{
+    font-size: clamp(1.6rem, 4vw, 3.2rem);
     font-weight: 400;
-    line-height: 3rem;
+    line-height: clamp(1.6rem, 4vw, 3.2rem);
     margin-bottom: 2rem;
 }
-.what-we-offer .card img{
+.what-we-offer-page .card img{
     width: 40%;
+}
+@media (max-width: 1024px){
+    .what-we-offer-page{
+        margin-top: 120px;    
+    }
+    .what-we-offer-page .card h4{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .what-we-offer-page{
+        margin-top: 80px;
+    }
 }
 /* what-we-offer-page ends*/
 
@@ -1320,12 +1369,14 @@ footer .address a img{
     margin-top: 150px;
 }
 .overview .overview-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;    
     column-gap: 80px;
     margin-bottom: 80px;    
     align-items: center;
     scroll-margin-top: 180px;
+}
+.overview .overview-card img{
+    width: 50%;
 }
 .overview .overview-card h4{
     font-size: 2rem;
@@ -1339,5 +1390,31 @@ footer .address a img{
     line-height: 1.5rem;
     margin-bottom: 1.4rem;
     opacity: .8;
+}
+@media (max-width: 1024px){
+    .overview{
+        margin-top: 120px;
+    }
+    .overview .overview-card{
+        flex-direction: column;
+        column-gap: 0;
+        margin-bottom: 40px;    
+    }
+    .overview .overview-card img{
+        height: 400px;
+        width: 400px;
+        margin: 20px auto ;
+    }
+    .overview .overview-card:nth-of-type(even){
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 768px){
+    .overview{
+        margin-top: 80px;
+    }
+    .what-we-offer-page{
+        margin-top: 80px;
+    }
 }
 /* overview ends*/
