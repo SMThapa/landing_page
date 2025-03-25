@@ -1204,6 +1204,9 @@ form button{
         display: flex;
         column-gap: 40px;
     }
+    .contact-page .form-divide{
+        grid-template-columns: 1fr;
+    }
 }
 @media (width < 450px){
     .contact-page .contact-contents{
