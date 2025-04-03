@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rental CRM Solution to Simplify Tenant Management, Automate Tasks, and Maximize Rental Efficiency.">
+    <meta name="keywords" content="CRM, Rental Management, Tenant Management, Property Management, Real Estate, Automation">
+    <meta name="robots" content="index, follow">    
+    <meta name="author" content="John Doe">
+
+    
     <title>SheltrX</title>
 
     <link rel="icon" type="image/x-icon" href="./assets/images/sheltrX_favicon.webp">
@@ -12,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    
     <nav class="text-dark">
         <div class="navigation">
             <a href="/" class="logo" >
@@ -24,7 +31,7 @@
                 <a href="/#pricing">pricing</a>
                 <a href="/#faq">FAQ</a>
             </div>
-            <a href="#" class="btn-get-in-touch">
+            <a href="contactPage.html" class="btn-get-in-touch">
                 <div class="image-wraper">
                     <img src="./assets/icons/next.png" alt="icon-next">
                     <img src="./assets/icons/next.png" alt="icon-next">
@@ -51,49 +58,50 @@
         </div>
     </nav>
 
-    <section id="contactPage">
+    <section id="getStartedForm">
         <div class="main-section-contents">
-            <div class="contact-page">
-                <h2 class="heading" data-aos="fade">Get in Touch With Us</h2>
-                <h4 class="title" data-aos="fade" data-aos-offset="80">Have questions? <span class="focus-1">We’re here</span> to help you with <br> <span class="focus-bold">Effortless Rental Management</span></h4>
+            <div class="getStarted-page">
+                <div class="heading" data-aos="fade">List Your PG With Us</div>                
+                <div class="title" data-aos="fade" data-aos-offset="80">Rent out your PG <span class="focus-1">effortlessly</span> — submit your details and connect with <span class="focus-bold">tenants instantly!</span></div>
 
-                <div class="contact-contents">
-                    <div class="form-content">
-                        <form  data-aos="fade" data-aos-offset="80">
-                            <div class="form-divide">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                                </div>
+                <div class="form-content">
+                    <form data-aos="fade" data-aos-offset="80">
+                        <div class="form-divide">
+                            <div class="form-group">
+                                <label for="name">Your PG Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your PG Name" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
                             </div>
-
-                            <button type="submit" class="btn-primary">Submit</button>
-                        </form>
-                    </div>
-                    <div class="other-details">
-                        <div class="contact-info" data-aos="fade" data-aos-offset="80">
-                            <div class="info-group">
-                                <div class="title">Email Us Anytime </div>
-                                <div class="info-sub-group">
-                                    <img src="./assets/icons/email.png" alt="icon"><a href="#">sheltrX@gmail.com</a>
-                                </div>
-                            </div>                            
-                            <div class="info-group">
-                                <div class="title">Our Location</div>
-                                <div class="info-sub-group">
-                                    <img src="./assets/icons/pin.png" alt="icon"><a href="#">Company Location</a>
-                                </div>
-                            </div>                            
                         </div>
-                    </div>
+
+                        <div class="form-divide">
+                            <div class="form-group">
+                                <label for="phone">Your Phone Number</label>
+                                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="total_pg">Total Number of PG</label>
+                                <input type="text" id="total_pg" name="total_pg" placeholder="Enter total number of PG" required>
+                            </div>
+                        </div>
+
+                        <div class="form-divide">
+                            <div class="form-group">
+                                <label for="plan">Select Plan</label>                                
+                                <select name="plan" id="plan" aria-placeholder="Select Plan" required>
+                                    <option value="">-- Select Plan --</option>
+                                    <option value="nest">Nest</option>
+                                    <option value="hive">Hive</option>
+                                    <option value="colony">Colony</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Submit Form</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -162,5 +170,6 @@
             autoRaf: true,
         });
     </script>
+
 </body>
 </html>

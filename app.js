@@ -1,11 +1,21 @@
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector("nav");
+    const logoDark = document.querySelector("nav .logo .dark");
+    const logoLight = document.querySelector("nav .logo .light");
 
     if (window.scrollY === 0 ) {
-        navbar.classList.remove("scrolled");
+      navbar.classList.remove("scrolled");
+      if(logoLight){
+        logoDark.classList.remove("active");
+        logoLight.classList.add("active");
+      }
     } else {
-        navbar.classList.add("scrolled");
-    }
+      navbar.classList.add("scrolled");
+      if(logoLight){
+        logoDark.classList.add("active");
+        logoLight.classList.remove("active");
+      }
+    } 
 });
 
 

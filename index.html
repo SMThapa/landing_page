@@ -23,7 +23,8 @@
     <nav >
         <div class="navigation">
             <a href="/" class="logo" >
-                <img src="./assets/icons/shelterxfull.png" alt="logo" />
+                <img src="./assets/icons/shelterxfull.png" alt="logo" class="dark"/>
+                <img src="./assets/icons/logo_light.png" alt="logo-light" class="light active" />
             </a>
             <div class="menu">
                 <a href="/">home</a>
@@ -70,7 +71,7 @@
             </h3>
 
             <div class="action-buttons" data-aos="fade">
-                <a href="/contactPage.html" class="btn-primary">Get In Touch With Us.</a>
+                <a href="/GetStartedForm.html" class="btn-primary">Get Started.</a>
                 <!-- <a href="#" class="btn-primary">Discover In Video</a> -->
             </div>
             <div class="mockup">
@@ -94,8 +95,48 @@
     </main>
 
     <main class="main-section-contents">
-        <div class="what-we-offer" id="about">
-            <h2 class="heading" data-aos="fade">Benefits You Will Get</h2>
+        <div class="benefits sticky-scroll" id="about">
+            <div class="sticky-left">
+                <h2 class="heading" data-aos="fade">Benefits You Will Get</h2>
+                <div class="title" data-aos="fade-up" data-aos-offset="80">Optimize <span class="focus-bold">Rental Operations</span> with <span class="focus-1">Smart Insights</span> & <span class="focus-1">Automation</span></div>    
+            </div>
+            <div class="scroll-right">
+                <div class="benefit-cards">
+                    <div class="benefit-card" data-aos="fade-left">
+                        <img src="./assets/images/3d-1.png" alt="">
+                        <h4>Simplified PG Management</h4>
+                        <p>Easily manage multiple PGs from a single dashboard. No need for multiple logins—handle rent collection, complaints, and tenant communication seamlessly.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-left">
+                        <img src="./assets/images/3d-2.png" alt="">
+                        <h4>Automated Rent Collection & Payment Reminders</h4>
+                        <p>Save time by automating rent payments and sending timely reminders. Reduce payment delays and track all transactions effortlessly.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-left">
+                        <img src="./assets/images/3d-3.png" alt="">
+                        <h4>Real-time Analytics</h4>
+                        <p>Get actionable insights into rent payments, occupancy rates, and tenant satisfaction. Make data-driven decisions to grow your PG business</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-left">
+                        <img src="./assets/images/3d-4.png" alt="">
+                        <h4>Stronger Tenant Relationships</h4>
+                        <p>Enhance tenant satisfaction with streamlined communication, quick complaint resolution, and better community engagement.</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-left">
+                        <img src="./assets/images/3d-5.png" alt="">
+                        <h4>Secure & Compliant Lease Management</h4>
+                        <p>Ensure legal compliance with automated lease agreements and secure record-keeping. Say goodbye to paperwork hassles</p>
+                    </div>
+                    <div class="benefit-card" data-aos="fade-left">
+                        <img src="./assets/images/3d-6.png" alt="">
+                        <h4>Exclusive Vendor Discounts</h4>
+                        <p>Save operational costs with verified vendor deals and discounts, making running a PG more affordable and profitable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="what-we-offer" >            
             <h4 class="title" data-aos="fade-up" data-aos-offset="80">All the tools <span class="focus-1">you need</span> for seamless <br> <span class="focus-bold">Rental Management</span></h4>
 
             <div class="card-contents">
@@ -125,7 +166,8 @@
                     <div class="btn-secondary" data-aos="fade-up"><img src="./assets/icons/next.png" alt="up-right-icon">View more</div>
                 </a>
             </div>            
-        </div>
+        </div> -->
+
         <div class="software-in-action" id="services">
             <div class="heading" data-aos="fade">Explore Our Rental CRM in Action</div>
             <h4 class="title" data-aos="fade-up" data-aos-offset="80">Streamline <span class="focus-1">rental</span> management with real-time <span class="focus-bold">insights</span> and <span class="focus-bold">automation</span>.</h4>
@@ -134,24 +176,24 @@
                 <div class="in-action-card" data-aos="fade-up" data-aos-delay="200">
                     <img src="./assets/images/2-1.webp" alt="">
                     <div class="card-text-contents">
-                        <h4>Mobile App Access</h4>
-                        <p>Manage rentals on the go—track leases, get alerts, and handle requests anytime.</p>
-                        <a href="/overview.html#card1">
+                        <h4>Mobile App Access – Manage Rentals Anywhere, Anytime</h4>
+                        <p>Our mobile app keeps property managers and tenants in control on the go. Get instant alerts, track leases, manage maintenance, and process secure payments—all in one place. Simplify rental operations with our all-in-one solution!</p>
+                        <!-- <a href="/overview.html#card1">
                             <div class="btn-primary"><img src="./assets/icons/top-right.png" alt="">Know More</div>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="in-action-card" data-aos="fade-up" >
                     <img src="./assets/images/2-2.webp" alt="">
                     <div class="card-text-contents">
-                        <h4>Automated Rent Collection</h4>
-                        <p>Set up rent reminders, track payments, and integrate multiple payment methods.</p>
-                        <a href="overview.html#card2">
+                        <h4>Dashboard Overview – Complete Control at a Glance</h4>
+                        <p>Our intuitive dashboard gives property managers a comprehensive view of their rental business. Track income, monitor payments, manage expenses, and stay updated on occupancy status—all in one place. Generate reports, optimize revenue, and assign controlled access with customizable roles.</p>
+                        <!-- <a href="overview.html#card2">
                             <div class="btn-primary"><img src="./assets/icons/top-right.png" alt="">Know More</div>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
-                <div class="in-action-card" data-aos="fade-up" data-aos-delay="200"> 
+                <!-- <div class="in-action-card" data-aos="fade-up" data-aos-delay="200"> 
                     <img src="./assets/images/2-3.webp" alt="">
                     <div class="card-text-contents">
                         <h4>Dashboard overview</h4>
@@ -170,15 +212,15 @@
                             <div class="btn-primary"><img src="./assets/icons/top-right.png" alt="">Know More</div>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- <div class="btn-secondary" data-aos="fade"><img src="./assets/icons/next.png" alt="right-icon">Let's start a Demo.</div> -->
 
             <div class="start-in-few-steps">
                 
             </div>
-        </div>
-
+        </div>   
+            
         <div class="quick-start">
             <h2 class="heading" data-aos="fade">Quick Start Guide</h2>
             <div class="title" data-aos="fade-up" data-aos-offset="80">
@@ -230,116 +272,175 @@
             <div class="title" data-aos="fade-up" data-aos-offset="80">Choose the <span class="focus-bold">Right Plan</span> for Your <span class="focus-1">Rental Business</span></div>
             <div class="pricing-contents">
                 <div class="pricing-card" data-aos="fade-up" data-aos-delay="100" >
-                    <h3>Basic</h3>
+                    <h3>Nest</h3>
                     <p>For small rental businesses</p>
-                    <div class="price">$9.99/month</div>
+                    <div class="price"><span class="blur">$9.99</span>/month</div>
                     <div class="btn-primary">Get Started</div>
                     <div class="underline"></div>
                     <ul>
-                        <li>Up to 10 properties</li>
-                        <li>Basic features</li>
-                        <li>Email support</li>
+                        <li>Seamless Property Management</li>
+                        <li>Faster Rent Collection & Refunds</li>
+                        <li>Instant Tenant Onboarding/Offboarding with eKYC</li>
+                        <li>Secure Deposit Handling</li>
+                        <li>Strong Community Engagement</li>
+                        <!-- <li>Hassle-Free Agreement Generation</li>
+                        <li>Enhanced Security & Guest Tracking</li>
+                        <li>Automated Campus Operations</li>
+                        <li>Push Notifications</li> -->
                     </ul>
+                      
                    
                 </div>
                 <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Standard</h3>
+                    <h3>Hive</h3>
                     <p>For growing rental businesses</p>
-                    <div class="price">$19.99/month</div>
+                    <div class="price"><span class="blur">$19.99</span>/month</div>
                     <div class="btn-primary">Get Started</div>
                     <div class="underline"></div>
                     <ul>
-                        <li>Up to 50 properties</li>
-                        <li>Advanced features</li>
-                        <li>Email & phone support</li>
+                        <li>Includes all features of Nest</li>
+                        <li>Real-Time Complaint Resolution</li>                        
+                        <li>Multi-Language Support for Tenants</li>
+                        <li>Scan to Enter and Exit</li>
+                        <li>Scan-to-Food Convenience</li>
+                        <!-- <li>Basic Analytics</li> -->
                     </ul>
+                      
                     
                 </div>
                 <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Premium</h3>
+                    <h3>Colony</h3>
                     <p>For large rental businesses</p>
-                    <div class="price">$29.99/month</div>
-                    <div class="btn-primary">Get Started</div>
+                    <div class="price"><span class="blur">$29.99</span>/month</div>
+                    <div class="btn-primary">Join Waitlist</div>
                     <div class="underline"></div>
                     <ul>
-                        <li>Unlimited properties</li>
-                        <li>Premium features</li>
-                        <li>Priority support</li>
+                        <li>Includes all features of Hive.</li>
+                        <li>Data-Driven Rent Pricing Suggestions</li>
+                        <li>Tenant Behavior & Compatibility Insights</li>
+                        <li>Increased Operational Efficiency with Analytics</li>
                     </ul>
-                    
                 </div>
+                <!-- <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Add-Ons</h3>
+                    <p>For large rental businesses</p>
+                    <div class="price"><span class="blur">$29.99</span>/month</div>
+                    <div class="btn-primary">Join Waitlist</div>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>One-Click External Software Integration</li>
+                        <li>Easy Access to Verified Vendor Discounts</li>
+                        <li>Legal, Tech & Marketing Support for Growth</li>
+                        <li>On-Demand PG Staff Hiring to Reduce Workload</li>
+                    </ul>
+                </div> -->
             </div>
+            <a href="pricing.html">
+                <div class="btn-primary btn-center" data-aos="fade" data-aos-delay="300">View More Details.</div>
+            </a>
         </div>    
 
         <div class="faq" id="faq">
             <h2 class="heading" data-aos="fade">Frequently Asked Questions</h2>
             <div class="title" data-aos="fade-up" data-aos-offset="80">Find Answers to <span class="focus-bold">Common Queries</span> About Our Rental CRM</div>
             <div class="accordion">
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="0" data-aos-offset="150">
-                  <button id="accordion-button-1" aria-expanded="false">
-                    <span class="accordion-title">What is SheltrX?</span>
-                    <img src="./assets/icons/top-right.png" alt="arrow">
-                  </button>
-                  <div class="accordion-content">
-                    <p>
-                        SheltrX is an all-in-one CRM solution designed to simplify rental management for property owners, landlords, and real estate professionals. It offers features such as tenant & lease management, automated payments, maintenance tracking, and smart insights to streamline property operations
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="100" data-aos-offset="100">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="50" data-aos-offset="100">
                   <button id="accordion-button-2" aria-expanded="false">
-                    <span class="accordion-title">How can SheltrX help my rental business?</span>
+                    <span class="accordion-title">What is Sheltrx and how does it help PG owners?</span>
                     <img src="./assets/icons/top-right.png" alt="arrow">
                   </button>
                   <div class="accordion-content">
                     <p>
-                        SheltrX can help your rental business by providing a centralized platform to manage tenant records, lease agreements, and payments. It automates rent collection, tracks maintenance requests, and offers real-time insights to optimize property performance. With SheltrX, you can streamline operations, reduce manual tasks, and enhance tenant satisfaction.
+                        Sheltrx is an advanced SaaS platform built specifically for PG and hostel owners. It automates rent collection, manages tenants, handles security, and provides smart analytics to optimize operations and increase profitability.
                     </p>
                   </div>
                 </div>
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="200" data-aos-offset="75">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="100" data-aos-offset="75">
                   <button id="accordion-button-3" aria-expanded="false">
-                    <span class="accordion-title">Is SheltrX suitable for small rental businesses?</span>
+                    <span class="accordion-title">How does the AI-Powered Rent Price Suggestion work?</span>
                     <img src="./assets/icons/top-right.png" alt="arrow">
                   </button>
                   <div class="accordion-content">
                     <p>
-                        Yes, SheltrX offers pricing plans that cater to small rental businesses, making it an ideal solution for landlords with a limited number of properties. The Basic plan provides essential features and email support to help you manage up to 10 properties efficiently.
+                        Our AI analyzes market trends, occupancy rates, and tenant demand to recommend optimal rent prices. This ensures you stay competitive while maximizing your profits.
                     </p>
                   </div>
                 </div>
-                <div class="accordion-item" data-aos="fade-right" data-aos-delay="300" data-aos-offset="50">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="150" data-aos-offset="50">
                   <button id="accordion-button-4" aria-expanded="false">
-                    <span class="accordion-title">Can I upgrade my plan as my rental business grows?</span>
+                    <span class="accordion-title">Can I manage multiple PGs from one account?</span>
                     <img src="./assets/icons/top-right.png" alt="arrow">
                   </button>
                   <div class="accordion-content">
                     <p>
-                        Yes, SheltrX allows you to upgrade your plan as your rental business expands. You can start with the Basic plan and move to the Standard or Premium plan as you acquire more properties and require advanced features. The pricing plans are designed to scale with your business needs.
+                        Yes, Sheltrx offers a unified dashboard where you can manage multiple PGs without the hassle of switching accounts.
                     </p>
                   </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="200" data-aos-offset="0">
+                  <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">Is tenant onboarding and verification secure?</span>
+                    <img src="./assets/icons/top-right.png" alt="arrow">
+                  </button>
+                  <div class="accordion-content">
+                    <p>
+                        Absolutely! Sheltrx uses eKYC verification to ensure secure and seamless onboarding, minimizing the risk of fraudulent tenants.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
+                    <button id="accordion-button-1" aria-expanded="false">
+                      <span class="accordion-title">What happens if I miss a rent collection reminder?</span>
+                      <img src="./assets/icons/top-right.png" alt="arrow">
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Our automated system sends timely rent reminders to tenants, reducing delays and ensuring consistent cash flow for PG owners.
+                      </p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="300" data-aos-offset="0">
+                    <button id="accordion-button-1" aria-expanded="false">
+                      <span class="accordion-title">What are the benefits of joining the Colony waitlist?</span>
+                      <img src="./assets/icons/top-right.png" alt="arrow">
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Colony includes cutting-edge features like AI-powered pricing, tenant behavior scoring, and on-demand PG staff hiring. By joining the waitlist, you get early access and exclusive benefits.
+                      </p>
+                    </div>
+                </div>                
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="350" data-aos-offset="0">
+                    <button id="accordion-button-1" aria-expanded="false">
+                      <span class="accordion-title">How does Sheltrx ensure security and compliance?</span>
+                      <img src="./assets/icons/top-right.png" alt="arrow">
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Sheltrx maintains strict compliance with data privacy laws and implements secure payment gateways to protect sensitive information.
+                      </p>
+                    </div>
                 </div>
                 <div class="accordion-item" data-aos="fade-right" data-aos-delay="400" data-aos-offset="0">
-                  <button id="accordion-button-5" aria-expanded="false">
-                    <span class="accordion-title">How do I get started with SheltrX?</span>
-                    <img src="./assets/icons/top-right.png" alt="arrow">
-                  </button>
-                  <div class="accordion-content">
-                    <p>
-                        Getting started with SheltrX is easy. Simply create an account, list your properties, and add tenant & lease details to begin managing your rentals. The platform is user-friendly and does not require any technical skills, allowing you to set up your rental business in just a few clicks.
-                    </p>
-                  </div>
+                    <button id="accordion-button-1" aria-expanded="false">
+                      <span class="accordion-title">Can I customize my plan by bundling/unbundling features?</span>
+                      <img src="./assets/icons/top-right.png" alt="arrow">
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Yes, Sheltrx offers flexible bundling options to let PG owners customize their plans based on their specific requirements.
+                      </p>
+                    </div>
                 </div>
             </div>            
         </div>
 
-        <div class="cto">
+        <!-- <div class="cto">
             <h2 class="heading" data-aos="fade">Ready to Simplify Your Rental Management?</h2>
             <div class="title" data-aos="fade-up">Start Your <span class="focus-bold">Free Trial</span> Today and Experience the <span class="focus-1">SheltrX Advantage</span></div>
             <a href="/contactPage.html">
                 <div class="cto-button" data-aos="fade">
-                    <div class="text1">
-                        <!-- <img src="./assets/icons/next.png" alt="next-icon"> -->
+                    <div class="text1">                        
                         <p>Let's Get Started</p>
                     </div>
                     <div class="text2">
@@ -348,13 +449,13 @@
                     </div>
                 </div>
             </a>
-        </div>
+        </div> -->
     </main>
 
     <footer>
         <div class="main-section-contents">
             <div class="footer-bg"></div>
-            <img src="./assets/icons/shelterxfull.png" alt="logo" class="logo" data-aos="fade"/>
+            <img src="./assets/icons/logo_light.png" alt="logo" class="logo" data-aos="fade"/>
             <div class="heading" data-aos="fade">Power Up Your Business with Our CRM</div>
             <div class="title" data-aos="fade-up" data-aos-offset="80">Streamline Your Sales, Automate Workflows, and Enhance Customer Relationships.</div>
             <div class="short-cut-menu">
